@@ -17,6 +17,8 @@ const startServer = async () => {
     })
   });
 
+  console.log("server changed");
+
   server.applyMiddleware({ app }); // app is from an existing express app
 
   app.listen({ port: 4000 }, () =>
